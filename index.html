@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="section-grid">
+
+            <div class="avatar-card">
+                <div class="avatar-card_header">
+                    <figure>
+                        <img src="./images/image-jeremy.png" alt="">
+                    </figure>
+
+                    <div class="avatar-card_header-body">
+                        <div>Report for</div>
+                        <h1>Jeremy Robson</h1>
+                    </div>
+                </div>
+
+                <div class="avatar-card_body">
+
+                        <input type="radio" class="input" name="timeframe" id="daily" value="daily" checked>
+                        <label for="daily" class="label">Daily</label>
+                        
+                        <input type="radio" class="input" name="timeframe" id="weekly" value="weekly">
+                        <label for="weekly" class="label">Weekly</label>
+                    
+                        <input type="radio" class="input" name="timeframe" id="monthly" value="monthly">
+                        <label for="monthly" class="label">Monthly</label>
+                    
+                </div>
+            </div>
+
+            <div class="card work">
+                <div class="card-body">
+                    <div class="card-body_top">
+                        <h3 class="card-title"></h3>
+                        <div class="icon-ellipsis-container">
+                            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg" class="icon-ellipsis"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="card-body_bottom">
+                        <div class="current-hours"></div>
+                        <div class="previous-hours"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card play">
+                <div class="card-body">
+                    <div class="card-body_top">
+                        <h3 class="card-title"></h3>
+                        <div class="icon-ellipsis-container">
+                            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg" class="icon-ellipsis"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="card-body_bottom">
+                        <div class="current-hours"></div>
+                        <div class="previous-hours"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card study">
+                <div class="card-body">
+                    <div class="card-body_top">
+                        <h3 class="card-title"></h3>
+                        <div class="icon-ellipsis-container">
+                            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg" class="icon-ellipsis"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="card-body_bottom">
+                        <div class="current-hours"></div>
+                        <div class="previous-hours"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card exercise">
+                <div class="card-body">
+                    <div class="card-body_top">
+                        <h3 class="card-title"></h3>
+                        <div class="icon-ellipsis-container">
+                            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg" class="icon-ellipsis"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="card-body_bottom">
+                        <div class="current-hours"></div>
+                        <div class="previous-hours"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card social">
+                <div class="card-body">
+                    <div class="card-body_top">
+                        <h3 class="card-title"></h3>
+                        <div class="icon-ellipsis-container">
+                            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg" class="icon-ellipsis"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="card-body_bottom">
+                        <div class="current-hours"></div>
+                        <div class="previous-hours"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card self-care">
+                <div class="card-body">
+                    <div class="card-body_top">
+                        <h3 class="card-title"></h3>
+                        <div class="icon-ellipsis-container">
+                            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg" class="icon-ellipsis"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="card-body_bottom">
+                        <div class="current-hours"></div>
+                        <div class="previous-hours"></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+
+
+    </main>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
