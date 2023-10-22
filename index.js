@@ -3,6 +3,12 @@ const cardCurrentHours = document.querySelectorAll('.current-hours')
 const cardPreviousHours = document.querySelectorAll('.previous-hours')
 const allInputs = document.querySelectorAll('.input')
 
+const timeframeTexts = {
+  daily: 'Last Day',
+  weekly: 'Last Week',
+  monthly: 'Last Month'
+};
+
 
 fetch('data.json')
   .then(response => response.json())
@@ -17,7 +23,8 @@ fetch('data.json')
 
         cardTitle.textContent = item.title;
         currentHours.textContent = `${item.timeframes[timeframe].current}hrs`;
-        previousHours.textContent = `Last Week - ${item.timeframes[timeframe].previous}hrs`;
+        previousHours.textContent = `${timeframeTexts[timeframe]} - ${item.timeframes[timeframe].previous}hrs`;
+
       });
     };
 

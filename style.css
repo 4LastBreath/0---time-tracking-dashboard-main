@@ -98,7 +98,7 @@ input[type='radio'] {
 .section-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: var(--size-200);
+  gap: var(--size-250);
 }
 
 .avatar-card {
